@@ -17,7 +17,7 @@ import javax.sql.DataSource;
 @Slf4j
 public class DataSourceConfig {
 
-    @Value("${db.defaultTransactionTimeout:2}")
+    @Value("${db.transaction.timeout:2}")
     private int defaultTransactionTimeoutInSecond;
 
     private final DataSource dataSource;
